@@ -6,6 +6,9 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    # Trigger rebuild every 4 hours to publish scheduled posts (UTC times match KST 00:05, 04:05, 08:05, 12:05, 16:05)
+    - cron: '5 3,7,15,19,23 * * *'
 
 permissions:
   contents: read
