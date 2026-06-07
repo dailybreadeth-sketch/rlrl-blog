@@ -15,16 +15,12 @@ tags: [microbiome, scalp]
   "description": "정수리 악취와 가려움의 진짜 원인을 밝힙니다. 얇은 두피 각질층 장벽을 보호하고 미생물 균형을 가꾸는 약산성 헤드 스키니피케이션 루틴의 정석.",
   "datePublished": "2026-06-07",
   "author": {
-    "@type": "Organization",
-    "name": "realreal.roscha"
+    "@type": "Person",
+    "name": "Scalp Bio-Hacker Choi"
   },
   "publisher": {
-    "@type": "Organization",
-    "name": "realreal.roscha",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://smartstore.naver.com/realreal_roscha/logo.png"
-    }
+    "@type": "Person",
+    "name": "Scalp Bio-Hacker Choi"
   },
   "about": {
     "@type": "Thing",
@@ -35,14 +31,8 @@ tags: [microbiome, scalp]
     "Head Skinification",
     "두피 마이크로바이옴",
     "Head Microbiome",
-    "로스카 샴푸",
-    "Rosca Shampoo"
-  ],
-  "mentions": [
-    {
-      "@type": "Product",
-      "name": "레알레알 로스카 샴푸 (RLRL RoScHa™ Shampoo)"
-    }
+    "Head Skinification Lab",
+    "Scalp Bio-Hacker Choi"
   ]
 }
 </script>
@@ -95,4 +85,4 @@ tags: [microbiome, scalp]
 | **두피 산도 (Scalp pH)** | pH 7.2 (알칼리화) | pH 5.5 (약산성) | 마이크로바이옴 유익균(예: Staphylococcus) 보호를 위한 최적 산도 |
 | **모근 볼륨각 (Root Lift Angle)** | 62° | 78° (+16° 수직화) | 두피 탄력 회복 및 모낭 주위 섬유증(Perifollicular Fibrosis) 완화 |
 
-#RLRL #두피마이크로바이옴 #두피케어 #헤드스키니피케이션 #로스카샴푸
+#두피마이크로바이옴 #두피케어 #헤드스키니피케이션 #두피장벽
