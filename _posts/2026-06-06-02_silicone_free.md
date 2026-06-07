@@ -12,7 +12,7 @@ tags: [silicone_free, scalp]
 이것은 모발의 겉면만을 덮는 일시적인 눈속임이다.
 이제는 실리콘프리 샴푸가 필요한 시점이다.
 
-![실리콘막이 두피 모공을 막아 호흡을 방해하는 클린 뷰티 일러스트](02_silicone_free_01_illus_block.png)
+![실리콘막이 두피 모공을 막아 호흡을 방해하는 클린 뷰티 일러스트]({{ site.baseurl }}/02_silicone_free_01_illus_block.png)
 *그림: 실리콘에 막힌 두피 표면과 모발 구조*
 
 디메치콘 같은 실리콘 성분은 모발 전체를 감싼다.
@@ -25,7 +25,7 @@ tags: [silicone_free, scalp]
 실리콘프리 샴푸 특유의 뻣뻣함을 95% 식물 유래 성분으로 극복했습니다.
 두피를 피부로 대하는 헤드 스키니피케이션 시스템의 뼈대다.
 
-![실리콘 샴푸와 무실리콘 샴푸 사용 시 모공 호흡량 비교 의학 감성 다이어그램](02_silicone_free_02_diagram_breath.png)
+![실리콘 샴푸와 무실리콘 샴푸 사용 시 모공 호흡량 비교 의학 감성 다이어그램]({{ site.baseurl }}/02_silicone_free_02_diagram_breath.png)
 *그림: 모공 가동성 및 호흡량 변화 추이 다이어그램*
 
 비워진 모공에 FLU BUBBLES™의 미세 거품이 도달한다.

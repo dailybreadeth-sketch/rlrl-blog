@@ -12,7 +12,7 @@ tags: [scalp, fatigue]
 운동 중 문득 정수리에서 불쾌한 취기가 느껴지는 순간이 있다.
 이것은 단순한 떡짐이 아닌, 두피 장벽이 보내는 구조적 신호입니다.
 
-![과도한 세정으로 유수분 균형이 붕괴된 두피 표면](01_scalp_fatigue_01_illus_dryness.png)
+![과도한 세정으로 유수분 균형이 붕괴된 두피 표면]({{ site.baseurl }}/01_scalp_fatigue_01_illus_dryness.png)
 *그림: 과도한 세정으로 유수분 균형이 붕괴된 두피 표면*
 
 ## 두피는 피부다
@@ -34,7 +34,7 @@ tags: [scalp, fatigue]
 편백수는 홍반 면적을 30분 이내에 32% 감소시킵니다.
 다마스크장미꽃수는 92% 활성도로 자생 환경을 가꾼다.
 
-![고농축 액티브 식물수 베이스의 맑은 텍스처](01_scalp_fatigue_02_illus_drops.png)
+![고농축 액티브 식물수 베이스의 맑은 텍스처]({{ site.baseurl }}/01_scalp_fatigue_02_illus_drops.png)
 *그림: 고농축 액티브 식물수 베이스의 맑은 텍스처*
 
 ### 플루 버블스(Flu Bubbles™)의 침투
@@ -45,7 +45,7 @@ tags: [scalp, fatigue]
 정밀 펌프는 1회에 1g의 정량만을 토출한다.
 덜어 써도 충분한 세정 효율을 확인해야 합니다.
 
-![100% 재활용 가능한 알루미늄 용기와 즉시 토출 버블 폼](01_scalp_fatigue_03_illus_aluminum.png)
+![100% 재활용 가능한 알루미늄 용기와 즉시 토출 버블 폼]({{ site.baseurl }}/01_scalp_fatigue_03_illus_aluminum.png)
 *그림: 100% 재활용 가능한 알루미늄 용기와 즉시 토출 버블 폼*
 
 ## 관리는 습관의 교정이다

@@ -63,7 +63,7 @@ tags: [microbiome, scalp]
 두피 각질층(Stratum Corneum) 장벽은 겨우 9㎛ 두께다.
 얼굴 피부 두께의 60%에 불과하여 쉽게 무너집니다.
 
-![말라세지아 진균의 피지 분해 및 올레산 C18:1 생성으로 인한 두피 장벽 9㎛ 붕괴 메커니즘 의학 감성 다이어그램](03_head_microbiome_02_diagram_microbiome.png)
+![말라세지아 진균의 피지 분해 및 올레산 C18:1 생성으로 인한 두피 장벽 9㎛ 붕괴 메커니즘 의학 감성 다이어그램]({{ site.baseurl }}/03_head_microbiome_02_diagram_microbiome.png)
 *그림: 유해균 대사와 장벽 붕괴 메커니즘*
 
 무너진 장벽 사이로 수분이 빠져나간다.
@@ -76,7 +76,7 @@ tags: [microbiome, scalp]
 억지로 균을 박멸하려는 시도는 오히려 유익균을 해칩니다.
 자극적인 화학 세정을 멈추고 스스로 회복할 자생 환경을 가꾸어야 한다.
 
-![약산성 pH 5.5 환경에서 평화롭게 유지되는 두피 마이크로바이옴 상주균 생태계 클린 뷰티 일러스트](03_head_microbiome_01_illus_ecosystem.png)
+![약산성 pH 5.5 환경에서 평화롭게 유지되는 두피 마이크로바이옴 상주균 생태계 클린 뷰티 일러스트]({{ site.baseurl }}/03_head_microbiome_01_illus_ecosystem.png)
 *그림: 평화로운 두피 미생물 생태계*
 
 건강한 대지의 기준은 약산성(pH 5.5) 밸런스 유지다.
