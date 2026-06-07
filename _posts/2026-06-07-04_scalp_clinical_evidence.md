@@ -1,11 +1,11 @@
 ---
-유형: Evidence
-상태: verified
-민감도: public
-업데이트: 2026-06-07
+layout: post
+title: "두피가 보내는 붉은 신호, 4대 임상 실증 데이터로 읽다"
+description: "두피의 일시적 온도 상승, 홍반, 프리라디칼 노화, 그리고 정수리 유분 악취의 메커니즘을 규명합니다. 4대 핵심 정량 지표와 과학적인 스킨화 단계별 관리 루틴."
+date: 2026-06-07 13:00:00 +0900
+categories: blog
+tags: [clinical, scalp]
 ---
-
-# 두피가 보내는 붉은 신호, 4대 임상 실증 데이터로 읽다
 
 <script type="application/ld+json">
 {
@@ -50,7 +50,7 @@
 인공 방부제와 합성 향료를 비우고 자연에서 얻은 맑은 식물수를 공급해야 한다.
 자연의 원료는 두피 스스로 균형을 찾도록 돕습니다.
 
-![식물수 원료의 두피 쿨링과 진정 작용을 형상화한 클린 뷰티 일러스트](04_scalp_clinical_evidence_01_illus_cooling.png)
+![식물수 원료의 두피 쿨링과 진정 작용을 형상화한 클린 뷰티 일러스트]({{ site.baseurl }}/04_scalp_clinical_evidence_01_illus_cooling.png)
 *그림: 식물수 기반의 마일드한 진정*
 
 과학적인 두피 케어(Scalp Care)는 명확한 수치로 말해야 한다.
@@ -62,7 +62,7 @@
 모낭 노화와 산화를 방해하는 프리라디칼(Free Radical) 현상을 강력하게 완화한다.
 지독한 정수리 냄새 유발 물질에 대해서도 89%의 강한 분자 흡착력을 확보하여 24시간 청결 환경을 유지한다.
 
-![두피 장벽의 4대 임상 정량 지표 데이터와 검증 기관을 명시한 의학 감성 다이어그램](04_scalp_clinical_evidence_02_diagram_clinical.png)
+![두피 장벽의 4대 임상 정량 지표 데이터와 검증 기관을 명시한 의학 감성 다이어그램]({{ site.baseurl }}/04_scalp_clinical_evidence_02_diagram_clinical.png)
 *그림: 4대 핵심 임상 지표 분석 차트*
 
 깨끗하고 건강한 두피 환경을 위해서는 비우고 채우는 체계적인 순서가 필요하다.
