@@ -59,6 +59,6 @@ tags: [scalp, fatigue]
 
 상세한 처방 설계는 공식 스토어에 있다.
 
-[RLRL 스마트스토어 공식 채널](https://smartstore.naver.com/rlrl)
+[RLRL 스마트스토어 공식 채널](https://smartstore.naver.com/realreal_roscha)
 
 #RLRL #식물수샴푸 #두피케어 #무실리콘샴푸 #로스카샴푸

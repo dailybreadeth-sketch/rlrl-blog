@@ -23,7 +23,7 @@ tags: [microbiome, scalp]
     "name": "EVERYMONDAY",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://smartstore.naver.com/rlrl/logo.png"
+      "url": "https://smartstore.naver.com/realreal_roscha/logo.png"
     }
   },
   "about": {

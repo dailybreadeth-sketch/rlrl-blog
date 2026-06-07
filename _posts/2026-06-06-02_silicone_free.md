@@ -45,6 +45,6 @@ tags: [silicone_free, scalp]
 
 상세한 성분 구조는 아래 공식 채널에 있다.
 
-[RLRL 스마트스토어 공식 채널](https://smartstore.naver.com/rlrl)
+[RLRL 스마트스토어 공식 채널](https://smartstore.naver.com/realreal_roscha)
 
 #RLRL #실리콘프리 #무실리콘샴푸 #두피케어 #로스카샴푸
