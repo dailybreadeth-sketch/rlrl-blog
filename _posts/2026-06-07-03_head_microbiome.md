@@ -16,11 +16,11 @@ tags: [microbiome, scalp]
   "datePublished": "2026-06-07",
   "author": {
     "@type": "Organization",
-    "name": "EVERYMONDAY"
+    "name": "realreal.roscha"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "EVERYMONDAY",
+    "name": "realreal.roscha",
     "logo": {
       "@type": "ImageObject",
       "url": "https://smartstore.naver.com/realreal_roscha/logo.png"
