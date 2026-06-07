@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="post-container">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+            <span class="post-date">📅 {{ page.date | date: "%Y년 %m월 %d일" }}</span>
+            <span class="post-author">✍️ EVERYMONDAY</span>
+        </div>
+        {% if page.description %}
+        <blockquote class="post-summary">
+            <strong>요약:</strong> {{ page.description }}
+        </blockquote>
+        {% endif %}
+    </header>
+
+    <hr class="header-divider">
+
+    <section class="post-content">
+        {{ content }}
+    </section>
+</article>

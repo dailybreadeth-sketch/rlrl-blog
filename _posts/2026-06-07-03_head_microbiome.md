@@ -1,11 +1,11 @@
 ---
-유형: Concept
-상태: verified
-민감도: public
-업데이트: 2026-06-07
+layout: post
+title: "우리 눈에 보이지 않는 두피 속 작은 숲, 마이크로바이옴 이야기"
+description: "정수리 악취와 가려움의 진짜 원인을 밝힙니다. 얇은 두피 각질층 장벽을 보호하고 미생물 균형을 가꾸는 약산성 헤드 스키니피케이션 루틴의 정석."
+date: 2026-06-07 10:20:00 +0900
+categories: blog
+tags: [microbiome, scalp]
 ---
-
-# 우리 눈에 보이지 않는 두피 속 작은 숲, 마이크로바이옴 이야기
 
 <script type="application/ld+json">
 {
