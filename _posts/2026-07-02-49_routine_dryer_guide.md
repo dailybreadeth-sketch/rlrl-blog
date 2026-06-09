@@ -69,8 +69,3 @@ publisher_type: Person
 
 ---
 
-![Typography Card]({{ site.baseurl }}/49_routine_dryer_01_illus_distance.png?v=6 "Typography Card")
-*그림: 두피 케어 루틴 단계 가이드*
-
-![Routine Diagram]({{ site.baseurl }}/49_routine_dryer_02_diagram_direction.png?v=6 "Routine Diagram")
-*그림: 두피 스킨케어 루틴 흐름도*

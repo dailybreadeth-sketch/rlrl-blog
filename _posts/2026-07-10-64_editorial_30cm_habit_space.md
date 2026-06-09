@@ -28,9 +28,6 @@ publisher_type: Person
 }
 </script>
 
-![30cm. the distance that changes everything.]({{ site.baseurl }}/64_editorial_hero_30cm.png)
-*friction · habit · space design*
-
 ---
 
 당신은 분명히 결심한 적 있을 것이다.
@@ -50,9 +47,6 @@ publisher_type: Person
 두피 케어가 3일 만에 무너지는 이유가 이제 보일 것이다. 제품이 욕실 안에 있다는 것, 그 하나가 결정적이다. 이미 샤워를 마치고 욕실을 나온 당신이 다시 문을 열고 들어가 제품을 집어드는 행동 — 이 동선 자체가 '마찰'이다. 대단히 크지 않아 보이지만, 그 작은 불편함이 습관 형성의 임계점을 매일 넘지 못하게 만든다.
 
 ---
-
-![NUDGE & SPACE · the architecture of habit.]({{ site.baseurl }}/64_editorial_group_nudge.png)
-*Rank 01–10 · Head Skinification Editorial*
 
 ---
 
@@ -90,4 +84,3 @@ publisher_type: Person
 
 ---
 
-*참고: James Clear, 「Atomic Habits」(2018) / Charles Duhigg, 「The Power of Habit」(2012) / UCL 습관 형성 연구, Phillippa Lally et al., European Journal of Social Psychology (2010)*

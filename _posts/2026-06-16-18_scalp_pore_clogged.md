@@ -59,8 +59,3 @@ publisher_type: Person
 
 ---
 
-![2D Flat Object Packaging Card]({{ site.baseurl }}/18_scalp_pore_01_illus_clogged.png?v=6 "2D Flat Object Packaging Card")
-*그림: 식물수 장벽 케어 처방의 기하학적 패키지 구조*
-
-![2D Flat Metric Diagram]({{ site.baseurl }}/18_scalp_pore_02_diagram_sequence.png?v=6 "2D Flat Metric Diagram")
-*그림: 두피 생리적 반응과 케어 루틴의 맑은 대조*

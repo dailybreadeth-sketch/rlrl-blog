@@ -86,8 +86,3 @@ publisher_type: Person
 
 ---
 
-![Typography Card]({{ site.baseurl }}/62_routine_integrate_01_illus_together.png?v=6 "Typography Card")
-*그림: 두피 케어 루틴 단계 가이드*
-
-![Routine Diagram]({{ site.baseurl }}/62_routine_integrate_02_diagram_complete.png?v=6 "Routine Diagram")
-*그림: 두피 스킨케어 루틴 흐름도*

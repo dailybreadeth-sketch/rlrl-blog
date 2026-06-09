@@ -40,9 +40,6 @@ publisher_type: Person
 }
 </script>
 
-![10 seconds. before you reach for the dryer.]({{ site.baseurl }}/63_editorial_hero_10seconds.png)
-*Head Skinification · Daily Ritual*
-
 ---
 
 당신은 아마 꽤 공을 들이는 사람일 것이다.
@@ -62,9 +59,6 @@ publisher_type: Person
 ---
 
 ## 두피는 피부다. 그러나 시장은 이 사실을 외면해왔다
-
-![USD 88B → USD 150B by 2033 · Grand View Research 2025]({{ site.baseurl }}/63_editorial_data_market.png)
-*헤어 & 두피 케어 글로벌 시장 규모 · Grand View Research 2025*
 
 Grand View Research의 2025년 글로벌 리포트에 따르면, 헤어 및 두피 케어 시장은 현재 **약 882억 달러 규모**이며 2033년까지 연평균 7.0%씩 성장해 **1,504억 달러**에 달할 것으로 전망된다. 아시아·태평양 지역이 이 시장의 37.5%를 점유하며 성장을 주도하고 있다.
 
@@ -93,9 +87,6 @@ Grand View Research의 2025년 글로벌 리포트에 따르면, 헤어 및 두�
 ---
 
 ## 행동 설계의 문제 — 왜 우리는 아는데도 안 했는가
-
-![B = MAP · B.J. Fogg, Stanford Behavior Design Lab]({{ site.baseurl }}/63_editorial_quote_fogg.png)
-*습관은 의지력이 필요한 게 아니다. 설계가 필요한 것이다.*
 
 여기서 잠깐, 심리학으로 눈을 돌릴 필요가 있다.
 
@@ -140,4 +131,3 @@ Grand View Research의 2025년 글로벌 리포트에 따르면, 헤어 및 두�
 
 ---
 
-*참고: Grand View Research, Global Hair and Scalp Care Market Report 2025 / B.J. Fogg, 「Tiny Habits」, Stanford Behavior Design Lab / Richard Thaler & Cass Sunstein, 「Nudge」*
