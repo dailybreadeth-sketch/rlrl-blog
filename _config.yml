@@ -14,5 +14,5 @@ exclude:
 
 # Google Analytics 4
 # GA4 측정 ID가 있다면 아래에 입력해주세요 (예: G-1234567890)
-google_analytics: ""
+google_analytics: "G-HZP4FT8TRL"
 
