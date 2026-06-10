@@ -3,7 +3,7 @@ layout: post
 title: "\"두피 가려움 = 병원? 사실은 그냥 '컨디션 난조'일 수 있습니다\""
 description: "모든 두피 고민을 처음부터 질환으로 키우지 마세요. 얼굴 안색이 나쁘다고 피부과부터 가지 않듯, 두피 가려움과 칙칙함 또한 일상의 다정한 수분 보습으로 다스리는 안목을 기릅니다."
 date: 2026-06-09 04:00:00 +0900
-categories: [Head Skinification, Myth Check]
+categories: ['Head Skinification', 'Scalp Basics']
 tags: [헤드스키니피케이션, 두피스킨케어, 뷰티리추얼, 자가진단, 레알레알]
 author: scalp-bio-hacker-choi
 toc: true

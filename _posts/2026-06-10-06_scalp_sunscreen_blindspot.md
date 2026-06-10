@@ -3,7 +3,7 @@ layout: post
 title: "\"얼굴엔 선크림 바르면서, 정수리는 맨살로 외출하시네요\""
 description: "가르마와 정수리는 365일 태양에 노출되는 사각지대입니다. 자외선과 뜨거운 열기로부터 두피 장벽을 지키기 위한 일상의 다정한 보습 세팅 습관을 알아봅니다."
 date: 2026-06-10 04:00:00 +0900
-categories: [Head Skinification, Daily Scalp Routine]
+categories: ['Head Skinification', 'Scalp Basics']
 tags: [헤드스키니피케이션, 두피스킨케어, 뷰티리추얼, 자가진단, 레알레알]
 author: scalp-bio-hacker-choi
 toc: true

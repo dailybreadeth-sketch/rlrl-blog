@@ -3,7 +3,7 @@ layout: post
 title: "\"두피랑 얼굴이 남남인 줄 아셨죠? 사실 한 몸입니다\""
 description: "귀 위아래로 피부의 국경선이 나뉘는 것이 아닙니다. 이마와 정수리가 부드럽게 이어진 한 장의 피부임을 깨닫고, 얼굴 스킨케어의 다정한 감각을 머리 위로 그대로 이어가 봅니다."
 date: 2026-06-10 00:00:00 +0900
-categories: [Head Skinification, Daily Scalp Routine]
+categories: ['Head Skinification', 'Scalp Basics']
 tags: [헤드스키니피케이션, 두피스킨케어, 뷰티리추얼, 자가진단, 레알레알]
 author: scalp-bio-hacker-choi
 toc: true

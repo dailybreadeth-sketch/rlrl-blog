@@ -18,3 +18,6 @@ Allow: /
 
 User-agent: CCBot
 Allow: /
+
+Sitemap: https://dailybreadeth-sketch.github.io/rlrl-blog/sitemap.xml
+
