@@ -1,0 +1,7 @@
+# Google Analytics credentials
+ga4-key.json
+ga4-token.json
+client-secret.json
+
+# Local backups
+_posts_backup/
