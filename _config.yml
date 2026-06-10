@@ -6,7 +6,6 @@ baseurl: "/rlrl-blog"
 permalink: /:title/
 markdown: kramdown
 highlighter: rouge
-future: true
 exclude:
   - Gemfile
   - Gemfile.lock
