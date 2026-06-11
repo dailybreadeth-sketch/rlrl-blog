@@ -3,6 +3,8 @@ description: "두피를 피부로 대하는 바이오해커의 조용한 기록"
 url: "https://dailybreadeth-sketch.github.io"
 baseurl: "/rlrl-blog"
 timezone: Asia/Seoul
+future: true
+
 
 
 permalink: /:title/
