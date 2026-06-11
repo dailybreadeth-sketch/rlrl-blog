@@ -464,3 +464,86 @@ script[type="application/ld+json"] {
         padding: 1.5rem;
     }
 }
+
+/* Sidebar Category Section Styling */
+.sidebar-section {
+    margin-top: 2rem;
+    border-top: 1px solid var(--sidebar-border);
+    padding-top: 1.5rem;
+}
+
+.sidebar-section-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--sidebar-text);
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--sidebar-text);
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.category-item:hover {
+    background-color: var(--sidebar-hover);
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.category-item.active {
+    background-color: var(--link-color);
+    color: #ffffff !important;
+}
+
+.category-item.active .category-count {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.category-count {
+    font-size: 0.75rem;
+    background-color: var(--sidebar-hover);
+    padding: 2px 6px;
+    border-radius: 10px;
+    color: var(--sidebar-text);
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Post Card Category Badge Styling */
+.card-meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.card-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: var(--sidebar-hover);
+    color: var(--sidebar-text);
+    padding: 3px 8px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+[data-theme="dark"] .card-badge {
+    background-color: #21262d;
+    color: #8b949e;
+}

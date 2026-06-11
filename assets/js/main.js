@@ -71,7 +71,62 @@ document.addEventListener('click', function(e) {
     }
 });
 
+// Dynamic Category Filtering via URL Hash
+function handleCategoryHash() {
+    const hash = window.location.hash;
+    const prefix = '#category-';
+    const postsList = document.querySelector('.posts-list');
+    if (!postsList) return; // Only filter on home list page
+    
+    let categorySlug = 'all';
+    if (hash && hash.startsWith(prefix)) {
+        categorySlug = hash.substring(prefix.length);
+    }
+    
+    // Update active state in sidebar links
+    const categoryLinks = document.querySelectorAll('.category-item');
+    categoryLinks.forEach(link => {
+        if (link.getAttribute('data-category') === categorySlug) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+    
+    // Filter card articles
+    const cards = document.querySelectorAll('.post-card');
+    let visibleCount = 0;
+    cards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (categorySlug === 'all' || cardCategory === categorySlug) {
+            card.style.display = 'block';
+            visibleCount++;
+        } else {
+            card.style.display = 'none';
+        }
+    });
+    
+    // Show no posts placeholder if all filtered out
+    let noPostsMsg = document.querySelector('.no-posts-filtered');
+    if (visibleCount === 0) {
+        if (!noPostsMsg) {
+            noPostsMsg = document.createElement('p');
+            noPostsMsg.className = 'no-posts no-posts-filtered';
+            noPostsMsg.style.textAlign = 'center';
+            noPostsMsg.style.padding = '3rem 0';
+            noPostsMsg.textContent = '선택한 카테고리에 등록된 포스팅이 없습니다.';
+            postsList.appendChild(noPostsMsg);
+        } else {
+            noPostsMsg.style.display = 'block';
+        }
+    } else if (noPostsMsg) {
+        noPostsMsg.style.display = 'none';
+    }
+}
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
+    handleCategoryHash();
+    window.addEventListener('hashchange', handleCategoryHash);
 });

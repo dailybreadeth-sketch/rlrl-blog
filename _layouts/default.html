@@ -38,6 +38,25 @@
                 <a href="{{ site.baseurl }}/" class="nav-link">🏠 Home</a>
                 <a href="{{ site.baseurl }}/privacy/" class="nav-link">🔒 Privacy Policy</a>
             </nav>
+
+            <div class="sidebar-section">
+                <h4 class="sidebar-section-title">🗂 카테고리</h4>
+                <div class="category-list">
+                    <a href="{{ site.baseurl }}/#category-all" class="category-item active" data-category="all">
+                        <span class="category-name">전체보기</span>
+                        <span class="category-count">{{ site.posts.size }}</span>
+                    </a>
+                    {% assign sorted_categories = site.categories | sort %}
+                    {% for cat in sorted_categories %}
+                    {% assign cat_name = cat[0] %}
+                    {% assign cat_slug = cat_name | slugify %}
+                    <a href="{{ site.baseurl }}/#category-{{ cat_slug }}" class="category-item" data-category="{{ cat_slug }}">
+                        <span class="category-name">{{ cat_name }}</span>
+                        <span class="category-count">{{ cat[1].size }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
             <div class="sidebar-footer">
                 <p>Head Skinification Curation Lab</p>
             </div>
