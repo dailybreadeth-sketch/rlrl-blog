@@ -470,6 +470,7 @@ script[type="application/ld+json"] {
     margin-top: 2rem;
     border-top: 1px solid var(--sidebar-border);
     padding-top: 1.5rem;
+    width: 100%;
 }
 
 .sidebar-section-title {
@@ -483,15 +484,17 @@ script[type="application/ld+json"] {
 }
 
 .category-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.35rem;
+    width: 100%;
 }
 
 .category-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--sidebar-text);

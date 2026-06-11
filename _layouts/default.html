@@ -7,7 +7,7 @@
     <meta name="naver-site-verification" content="64693308c5db5a863df2d52419dcdeec22564868" />
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
     {% if page.layout == "post" %}
     <!-- Include JSON-LD dynamically for search engines -->
     {% endif %}
@@ -84,7 +84,7 @@
         </aside>
     </div>
 
-    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/main.js?v={{ site.time | date: '%Y%m%d%H%M%S' }}"></script>
     <script>
         // Simple client-side search data feeding
         const postsData = [
