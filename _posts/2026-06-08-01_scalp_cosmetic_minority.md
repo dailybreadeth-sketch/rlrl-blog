@@ -3,7 +3,7 @@ layout: post
 title: "\"당신의 두피는 지금, 화장품 소외계층입니다\""
 description: "거울 앞 15분과 욕실 3분 사이, 우리가 외면해온 진실. 얼굴과 똑같은 피부이면서도 늘 관리에서 밀려났던 두피 스킨케어의 당위성을 자가진단형 위트로 짚어봅니다."
 date: 2026-06-08 00:00:00 +0900
-categories: ['Head Skinification', 'Scalp Basics']
+categories: ['Head Skinification']
 tags: [헤드스키니피케이션, 두피스킨케어, 뷰티리추얼, 자가진단, 레알레알]
 author: scalp-bio-hacker-choi
 toc: true

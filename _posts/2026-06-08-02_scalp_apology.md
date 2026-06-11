@@ -3,7 +3,7 @@ layout: post
 title: "\"두피한테 사과하세요. 20년간 모르는 척하셨잖아요\""
 description: "안 보인다고 없는 게 아닙니다. 얼굴 피부 트러블엔 즉각 반응하면서 정수리 대지는 철저히 모르는 척해왔던 일상의 모순을 돌아보고, 두피에 가벼운 수분 안부를 묻는 10초 습관을 제안합니다."
 date: 2026-06-08 00:05:00 +0900
-categories: ['Head Skinification', 'Scalp Basics']
+categories: ['Head Skinification']
 tags: [헤드스키니피케이션, 두피스킨케어, 뷰티리추얼, 자가진단, 레알레알]
 author: scalp-bio-hacker-choi
 toc: true

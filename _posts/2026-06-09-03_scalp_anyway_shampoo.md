@@ -3,7 +3,7 @@ layout: post
 title: "\"건성·지성 따지는 당신이, 두피는 왜 '아무거나'로 통일했나요\""
 description: "화장대 위 5병의 보습제와 욕실의 샴푸 1통의 차이. 두피 또한 부위별 유수분이 다른 복합성 피부임을 깨닫고, 샴푸 다음 단계를 채우는 행동 변화를 시작해봅니다."
 date: 2026-06-09 00:00:00 +0900
-categories: ['Head Skinification', 'Scalp Basics']
+categories: ['Daily Routine']
 tags: [헤드스키니피케이션, 두피스킨케어, 뷰티리추얼, 자가진단, 레알레알]
 author: scalp-bio-hacker-choi
 toc: true
