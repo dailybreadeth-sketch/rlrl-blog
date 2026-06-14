@@ -85,6 +85,71 @@
         </aside>
     </div>
 
+    <!-- LLM Bot Detector & KVdb Tracker -->
+    <script>
+        (function() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            const llmBots = [
+                'gptbot', 'claudebot', 'perplexitybot', 'applebot-extended', 
+                'oai-searchbot', 'google-extended', 'coherebot', 'facebookexternalhit',
+                'meta-externalagent', 'omgilibot', 'anthropic-ai', 'diffbot', 'bot', 'crawler', 'spider'
+            ];
+            // Standard check + test query parameter support for manual verification
+            const isBot = llmBots.some(bot => userAgent.includes(bot)) || window.location.search.includes('test=bot');
+            
+            if (isBot) {
+                const bucketUrl = "https://kvdb.io/AxwRJPGgoYFP4dTbKsL92U/";
+                const pageUrl = window.location.pathname;
+                const nowStr = new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' });
+                
+                // 1. Increment count
+                fetch(bucketUrl + "total_scrapes")
+                    .then(res => res.text())
+                    .then(val => {
+                        let count = parseInt(val) || 0;
+                        count++;
+                        fetch(bucketUrl + "total_scrapes", {
+                            method: 'PUT',
+                            body: count.toString()
+                        });
+                    })
+                    .catch(() => {
+                        fetch(bucketUrl + "total_scrapes", { method: 'PUT', body: "1" });
+                    });
+                    
+                // 2. Log entry
+                fetch(bucketUrl + "logs")
+                    .then(res => res.json())
+                    .then(logs => {
+                        if (!Array.isArray(logs)) logs = [];
+                        logs.unshift({
+                            created_at: nowStr,
+                            user_agent: navigator.userAgent,
+                            page_url: pageUrl,
+                            ip: "Detected (Protected)"
+                        });
+                        if (logs.length > 15) logs = logs.slice(0, 15);
+                        fetch(bucketUrl + "logs", {
+                            method: 'PUT',
+                            body: JSON.stringify(logs)
+                        });
+                    })
+                    .catch(() => {
+                        const initialLog = [{
+                            created_at: nowStr,
+                            user_agent: navigator.userAgent,
+                            page_url: pageUrl,
+                            ip: "Detected (Protected)"
+                        }];
+                        fetch(bucketUrl + "logs", {
+                            method: 'PUT',
+                            body: JSON.stringify(initialLog)
+                        });
+                    });
+            }
+        })();
+    </script>
+
     <script src="{{ site.baseurl }}/assets/js/main.js?v={{ site.time | date: '%Y%m%d%H%M%S' }}"></script>
     <script>
         // Simple client-side search data feeding

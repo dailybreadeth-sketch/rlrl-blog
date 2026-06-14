@@ -56,57 +56,85 @@ permalink: /llm-tracker/
 <!-- Add Chart.js and Dashboard Script -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    // Supabase 또는 API 엔드포인트 연동 로직
-    const SUPABASE_URL = "https://hzp4ft8trl-logs.supabase.co"; // 추후 설정될 DB 주소
-    const SUPABASE_KEY = "YOUR_SUPABASE_ANON_KEY";
+    const bucketUrl = "https://kvdb.io/AxwRJPGgoYFP4dTbKsL92U/";
 
     async function fetchLogs() {
-        // 실제 연동 완료 시 데이터를 가져와서 차트와 로그 테이블을 갱신하는 로직
-        // 현재는 안전한 연동을 대기하는 Mock 데이터로 인터페이스를 시뮬레이션합니다.
-        setTimeout(() => {
-            const mockData = [
-                { created_at: "2026-06-13 23:12:45", user_agent: "GPTBot/1.0 (+http://openai.com/gptbot)", page_url: "/rlrl-blog/사무실_에어컨_바람_아래_정수리가_마르는_소리_없는_건조/", ip: "23.22.14.88" },
-                { created_at: "2026-06-13 22:47:11", user_agent: "ClaudeBot/1.0 (+http://anthropic.com/claudebot)", page_url: "/rlrl-blog/머리_감기_전_10초의_기적_마른_빗질이_두피_청결과_모근_강화에_주는_시너지/", ip: "54.89.21.104" },
-                { created_at: "2026-06-13 21:58:32", user_agent: "PerplexityBot/1.0 (+http://perplexity.ai)", page_url: "/rlrl-blog/실리콘_프리_샴푸의_이중성_뻣뻣함_뒤에_숨겨진_두피_모근의_진짜_호흡/", ip: "18.204.45.12" },
-                { created_at: "2026-06-13 20:14:02", user_agent: "GPTBot/1.0 (+http://openai.com/gptbot)", page_url: "/rlrl-blog/헤어_세럼이_아닌_두피_스킨_기초화장의_경계를_넘다/", ip: "23.22.14.90" }
-            ];
+        try {
+            // 1. Get total count
+            const totalRes = await fetch(bucketUrl + "total_scrapes");
+            const totalVal = await totalRes.text();
+            const totalCount = parseInt(totalVal) || 0;
+            document.getElementById('total-scrapes').textContent = totalCount;
 
-            document.getElementById('total-scrapes').textContent = "142";
-            document.getElementById('active-bots').textContent = "3 (GPTBot, ClaudeBot, Perplexity)";
-            document.getElementById('last-scraped').textContent = "23:12:45";
-
-            const logBody = document.getElementById('log-body');
-            logBody.innerHTML = '';
-            mockData.forEach(row => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td>${row.created_at}</td>
-                    <td class="crawler-name">${row.user_agent.split(' ')[0]}</td>
-                    <td><a href="${row.page_url}">${row.page_url}</a></td>
-                    <td>${row.ip}</td>
-                `;
-                logBody.appendChild(tr);
-            });
-
-            // Render Chart
-            const ctx = document.getElementById('bot-chart').getContext('2d');
-            new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['OpenAI (GPTBot)', 'Anthropic (ClaudeBot)', 'PerplexityBot'],
-                    datasets: [{
-                        data: [78, 44, 20],
-                        backgroundColor: ['#0969da', '#2da44e', '#cf222e']
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: { position: 'bottom' }
+            // 2. Get logs
+            const logsRes = await fetch(bucketUrl + "logs");
+            const logs = await logsRes.json();
+            
+            if (Array.isArray(logs) && logs.length > 0) {
+                // Last scraped time
+                const lastLogTime = logs[0].created_at.split(' ')[1] || logs[0].created_at;
+                document.getElementById('last-scraped').textContent = lastLogTime;
+                
+                // Active bots counting
+                const botCounts = {};
+                const logBody = document.getElementById('log-body');
+                logBody.innerHTML = '';
+                
+                logs.forEach(row => {
+                    // Extract bot name from agent
+                    let botName = "기타 크롤러 (Other)";
+                    const ua = row.user_agent.toLowerCase();
+                    if (ua.includes('gptbot')) botName = 'OpenAI (GPTBot)';
+                    else if (ua.includes('claudebot')) botName = 'Anthropic (ClaudeBot)';
+                    else if (ua.includes('perplexity')) botName = 'PerplexityBot';
+                    else if (ua.includes('applebot')) botName = 'Applebot-Extended';
+                    else if (ua.includes('oai-search')) botName = 'OAI-SearchBot';
+                    else if (ua.includes('google-extended')) botName = 'Google-Extended';
+                    else if (ua.includes('cohere')) botName = 'CohereBot';
+                    else if (ua.includes('meta-') || ua.includes('facebook')) botName = 'MetaBot';
+                    else if (ua.includes('chrome') || ua.includes('safari')) {
+                        botName = 'Manual Test Bot';
                     }
-                }
-            });
-        }, 1000);
+                    
+                    botCounts[botName] = (botCounts[botName] || 0) + 1;
+                    
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${row.created_at}</td>
+                        <td class="crawler-name">${botName}</td>
+                        <td><a href="${row.page_url}">${row.page_url}</a></td>
+                        <td>${row.ip}</td>
+                    `;
+                    logBody.appendChild(tr);
+                });
+                
+                document.getElementById('active-bots').textContent = `${Object.keys(botCounts).length} 종 (${Object.keys(botCounts).join(', ')})`;
+                
+                // 3. Render Chart
+                const ctx = document.getElementById('bot-chart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: Object.keys(botCounts),
+                        datasets: [{
+                            data: Object.values(botCounts),
+                            backgroundColor: ['#0969da', '#2da44e', '#cf222e', '#8250df', '#bf3989', '#d4a72c']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { position: 'bottom' }
+                        }
+                    }
+                });
+            } else {
+                document.getElementById('log-body').innerHTML = '<tr><td colspan="4" class="no-logs">아직 감지된 크롤러 수집 이력이 없습니다. (?test=bot 주소로 직접 테스트해 보세요!)</td></tr>';
+            }
+        } catch (e) {
+            console.error("Failed to load logs:", e);
+            document.getElementById('log-body').innerHTML = '<tr><td colspan="4" class="no-logs">실시간 데이터베이스 연결 중 오류가 발생했습니다.</td></tr>';
+        }
     }
 
     document.addEventListener('DOMContentLoaded', fetchLogs);
