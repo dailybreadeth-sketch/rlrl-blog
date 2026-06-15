@@ -1,27 +1,16 @@
 ---
 layout: default
-title: Home
+title: English Articles
+permalink: /en/
 ---
 
-<script>
-    (function() {
-        if (sessionStorage.getItem('lang_redirected')) {
-            return;
-        }
-        const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
-        if (userLang.startsWith('en')) {
-            sessionStorage.setItem('lang_redirected', 'true');
-            window.location.href = "{{ site.baseurl }}/en/";
-        }
-    })();
-</script>
-
 <div class="home-container">
-    <h2 class="section-title">최신 포스팅 목록</h2>
+    <h2 class="section-title">Latest English Articles</h2>
+    <p class="section-desc">Curation and journals for Head Skinification and proactive scalp wellness.</p>
     
     <div class="posts-list">
         {% for post in site.posts %}
-        {% if post.lang == 'en' %}{% continue %}{% endif %}
+        {% if post.lang != 'en' %}{% continue %}{% endif %}
         {% assign post_cat = post.categories | first %}
         <article class="post-card" data-category="{{ post_cat | slugify }}">
             <header class="card-header">
@@ -39,11 +28,11 @@ title: Home
                 <p>{{ post.description }}</p>
             </section>
             <footer class="card-footer">
-                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">자세히 읽기 &rarr;</a>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More &rarr;</a>
             </footer>
         </article>
         {% else %}
-        <p class="no-posts">등록된 포스팅이 없습니다.</p>
+        <p class="no-posts">No English articles published yet.</p>
         {% endfor %}
     </div>
 </div>

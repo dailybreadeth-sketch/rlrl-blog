@@ -19,6 +19,26 @@
       {% endfor %}
     {% endif %}
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
+
+    <!-- Intelligent Redirect for Bilingual Posts -->
+    {% if page.lang == 'ko' and page.translation_id %}
+      {% assign siblings = site.posts | where: "translation_id", page.translation_id %}
+      {% for sibling in siblings %}
+        {% if sibling.lang == 'en' %}
+          <script>
+            (function() {
+                if (!sessionStorage.getItem('lang_redirected')) {
+                    const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
+                    if (userLang.startsWith('en')) {
+                        sessionStorage.setItem('lang_redirected', 'true');
+                        window.location.href = "{{ sibling.url | absolute_url }}";
+                    }
+                }
+            })();
+          </script>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
     {% if page.layout == "post" %}
     <!-- Include JSON-LD dynamically for search engines -->
     {% endif %}
