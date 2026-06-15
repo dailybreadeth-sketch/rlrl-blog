@@ -25,7 +25,7 @@ plugins:
 google_analytics: "G-HZP4FT8TRL"
 
 # Vercel Tracker (1x1 Pixel API가 배포된 Vercel 도메인 주소 입력)
-vercel_tracker_url: "https://rlrl-blog-tracker.vercel.app"
+vercel_tracker_url: "https://rlrl-blog.vercel.app"
 
 defaults:
   - scope:
