@@ -54,17 +54,20 @@
             <div class="sidebar-section">
                 <h4 class="sidebar-section-title">🗂 카테고리</h4>
                 <div class="category-list">
+                    {% assign ko_posts = site.posts | where_exp: "item", "item.lang != 'en'" %}
                     <a href="{{ site.baseurl }}/#category-all" class="category-item active" data-category="all">
                         <span class="category-name">전체보기</span>
-                        <span class="category-count">{{ site.posts.size }}</span>
+                        <span class="category-count">{{ ko_posts.size }}</span>
                     </a>
                     {% assign sorted_categories = site.categories | sort %}
                     {% for cat in sorted_categories %}
                     {% assign cat_name = cat[0] %}
+                    {% if cat_name == 'en' %}{% continue %}{% endif %}
                     {% assign cat_slug = cat_name | slugify %}
+                    {% assign cat_ko_posts = cat[1] | where_exp: "item", "item.lang != 'en'" %}
                     <a href="{{ site.baseurl }}/#category-{{ cat_slug }}" class="category-item" data-category="{{ cat_slug }}">
                         <span class="category-name">{{ cat_name }}</span>
-                        <span class="category-count">{{ cat[1].size }}</span>
+                        <span class="category-count">{{ cat_ko_posts.size }}</span>
                     </a>
                     {% endfor %}
                 </div>

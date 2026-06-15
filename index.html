@@ -8,6 +8,7 @@ title: Home
     
     <div class="posts-list">
         {% for post in site.posts %}
+        {% if post.lang == 'en' %}{% continue %}{% endif %}
         {% assign post_cat = post.categories | first %}
         <article class="post-card" data-category="{{ post_cat | slugify }}">
             <header class="card-header">
