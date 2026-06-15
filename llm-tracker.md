@@ -86,6 +86,7 @@ permalink: /llm-tracker/
                     const ua = row.user_agent.toLowerCase();
                     if (ua.includes('gptbot')) botName = 'OpenAI (GPTBot)';
                     else if (ua.includes('claudebot')) botName = 'Anthropic (ClaudeBot)';
+                    else if (ua.includes('mediapartners-google') || ua.includes('google-adsense-bot')) botName = 'Google AdSense Bot';
                     else if (ua.includes('perplexity')) botName = 'PerplexityBot';
                     else if (ua.includes('applebot')) botName = 'Applebot-Extended';
                     else if (ua.includes('oai-search')) botName = 'OAI-SearchBot';

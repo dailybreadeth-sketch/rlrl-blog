@@ -11,7 +11,8 @@ export default async function handler(req, res) {
   const llmBots = [
     'gptbot', 'claudebot', 'perplexitybot', 'applebot-extended', 
     'oai-searchbot', 'google-extended', 'coherebot', 'facebookexternalhit',
-    'meta-externalagent', 'omgilibot', 'anthropic-ai', 'diffbot', 'bot', 'crawler', 'spider'
+    'meta-externalagent', 'omgilibot', 'anthropic-ai', 'diffbot', 'bot', 'crawler', 'spider',
+    'mediapartners-google', 'google-adsense-bot'
   ];
 
   // AI 크롤러 봇 검출
